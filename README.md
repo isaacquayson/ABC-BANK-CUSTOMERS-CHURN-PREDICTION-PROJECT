@@ -103,8 +103,49 @@ Historical dataset includes:
 
 ---
 
+## Machine Learning Modelling
 
+### Models Performance
 
+| Model                | Accuracy | Precision | Recall | F1 Score |
+|-----------------------|----------|-----------|--------|----------|
+| Logistic Regression   | 83.45%   | 67.4%     | 32%    | 0.43     |
+| XGBoost Classifier    | 85.75%   | 100%      | 100%   | 1.00     |
+
+**Analysis:**
+- Logistic Regression: Decent accuracy, but **low recall (32%)** → misses most churners.  
+- XGBoost Classifier: Superior performance with **perfect precision, recall, and F1 score**.  
+
+➡️ **Best Model: XGBoost** (reliable for capturing all churners).
+
+---
+
+## Key Drivers of Churn (XGBoost Feature Importance)
+- **Number of Products**: Single-product customers = highest churn risk.  
+- **Active Member**: Inactive customers churn more.  
+- **Age & Country**: Non-linear churn trends; **Germany & Spain** show higher churn vs France.  
+- **Financial Factors**:  
+  - Low balance = secondary bank users  
+  - High balance = rate-sensitive customers  
+  - Early tenure = higher churn risk if onboarding is weak  
+![](https://github.com/isaacquayson/ABC-BANK-CUSTOMERS-CHURN-PREDICTION-PROJECT/blob/main/Screenshot%202025-09-09%20162434.png)
+
+---
+
+## Recommendations
+1. **Target inactive, single-product customers** → Reactivation + product bundling.  
+2. **Localize strategies** → Tailored promotions in **Germany & Spain**.  
+3. **Strengthen onboarding** → Structured **first 90 days** (salary deposits, card activation, digital use).  
+4. **Protect high-value customers** → Personalized offers, proactive outreach.  
+
+---
+
+## Dashboard
+An interactive Power BI dashboard was created showing:
+- Customer demographics & churn distribution  
+- Credit score by age group  
+- Account balance vs churn  
+- Key business insights  
 
 
 
