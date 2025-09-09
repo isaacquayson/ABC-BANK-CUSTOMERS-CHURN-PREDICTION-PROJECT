@@ -147,7 +147,7 @@ An interactive Power BI dashboard was created showing:
 - Account balance vs churn  
 - Key business insights  
 
-
+![](https://github.com/isaacquayson/ABC-BANK-CUSTOMERS-CHURN-PREDICTION-PROJECT/blob/main/Screenshot%202025-09-05%20231416.png)
 
 
 
